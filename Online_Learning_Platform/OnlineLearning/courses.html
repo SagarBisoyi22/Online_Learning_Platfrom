@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Learing Platform</title>
+  <link rel="stylesheet" href="../OnlineLearning/assets/css/style.css">
+  <link rel="shortcut icon" href="../OnlineLearning/assets/images/fev.ico">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <!-- <a href="" class="logo"> -->
+      <img src="./assets/images/logo.png" width="162" height="50" alt="online_learing logo">
+      <!-- </a> -->
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="index.html" class="logo">
+            <img src="./assets/images/logo.png" width="162" height="50" alt="online_learing logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="./index.html" class="navbar-link" data-nav-link><b>Home</b></a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./courses.html" class="navbar-link" data-nav-link><b>Courses</b></a>
+          </li>
+          <li class="navbar-item">
+            <a href="./about.html" class="navbar-link" data-nav-link><b>About</b></a>
+          </li>
+          <li class="navbar-item">
+            <a href="./contact.html" class="navbar-link" data-nav-link><b>Contact</b></a>
+          </li>
+
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <!-- Modified Login Button -->
+        <div class="dropdown">
+          <button class="btn navbar-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+            Login
+            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+          </button>
+          <div class="dropdown-menu">
+            <a href="login.html" class="dropdown-item">User Login</a>
+            <a href="../../admin/login.html" class="dropdown-item">Admin Login</a>
+          </div>
+        </div>
+
+        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+  <section class="section course" id="courses" aria-label="course">
+    <div class="container">
+      <h2 class="h2 section-title">Pick A Course To Get Started</h2><br>
+
+      <ul class="grid-list">
+
+        <li>
+          <div class="course-card">
+
+            <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+              <img src="./assets/images/course-1.jpg" width="370" height="220" loading="lazy"
+                alt="Build Responsive Real- World Websites with HTML and CSS" class="img-cover">
+            </figure>
+
+            <div class="abs-badge">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+              <span class="span">8 Weeks</span>
+            </div>
+
+            <div class="card-content">
+              <span class="badge">Beginner</span>
+              <h3 class="h3">
+                <a href="#" class="card-title">Build Responsive Real- World Websites with HTML and CSS</a>
+              </h3>
+              <div class="wrapper">
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+                <p class="rating-text">(5.0/7 Rating)</p>
+              </div>
+              <p>Price in INR: <data class="price" value="4067">₹2499.00</data></p>
+              <ul class="card-meta-list">
+                <li class="card-meta-item">
+                  <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+                  <span class="span">30 Lessons</span>
+                </li>
+                <li class="card-meta-item">
+                  <button class="enroll-btn" onclick="alert('Please log in to enroll in courses');">Enroll Now</button>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </li>
+
+
+        <!-- Duplicate cards with new details -->
+
+        <li>
+          <div class="course-card">
+            <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+              <img src="./assets/images/course-2.jpg" width="370" height="220" loading="lazy"
+                alt="Java Programming Masterclass" class="img-cover">
+            </figure>
+            <div class="abs-badge">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+              <span class="span">12 Weeks</span>
+            </div>
+            <div class="card-content">
+              <span class="badge">Advanced</span>
+              <h3 class="h3"><a href="#" class="card-title">Java Programming Masterclass</a></h3>
+              <div class="wrapper">
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+                <p class="rating-text">(4.5 /9 Rating)</p>
+              </div>
+              <p>Price in INR: <data class="price" value="4067">₹3999.00</data></p>
+              <ul class="card-meta-list">
+                <li class="card-meta-item">
+                  <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+                  <span class="span">80 Lessons</span>
+                </li>
+                <li class="card-meta-item">
+                  <button class="enroll-btn" onclick="alert('Please log in to enroll in courses');">Enroll Now</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="course-card">
+            <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+              <img src="./assets/images/course-3.jpg" width="370" height="220" loading="lazy"
+                alt="The Complete MySQL Course for Beginner" class="img-cover">
+            </figure>
+            <div class="abs-badge">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+              <span class="span">8 Weeks</span>
+            </div>
+            <div class="card-content">
+              <span class="badge">Intermediate</span>
+              <h3 class="h3"><a href="#" class="card-title">The Complete MySQL Course for Beginner</a></h3>
+              <div class="wrapper">
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+                <p class="rating-text">(4.9 /7 Rating)</p>
+              </div>
+              <p>Price in INR: <data class="price" value="2999.00">₹2999.00</data></p>
+              <ul class="card-meta-list">
+                <li class="card-meta-item">
+                  <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+                  <span class="span">50 Lessons</span>
+                </li>
+                <li class="card-meta-item">
+                  <button class="enroll-btn" onclick="alert('Please log in to enroll in courses');">Enroll Now</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="course-card">
+            <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+              <img src="./assets/images/python.jpg" width="370" height="220" loading="lazy"
+                alt="Python for Data Science" class="img-cover">
+            </figure>
+            <div class="abs-badge">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+              <span class="span">10 Weeks</span>
+            </div>
+            <div class="card-content">
+              <span class="badge">Intermediate</span>
+              <h3 class="h3"><a href="#" class="card-title">Python for Data Science</a></h3>
+              <div class="wrapper">
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+                <p class="rating-text">(4.8 /8 Rating)</p>
+              </div>
+              <p>Price in INR: <data class="price" value="3599.00">₹3599.00</data></p>
+              <ul class="card-meta-list">
+                <li class="card-meta-item">
+                  <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+                  <span class="span">60 Lessons</span>
+                </li>
+                <li class="card-meta-item">
+                  <button class="enroll-btn" onclick="alert('Please log in to enroll in courses');">Enroll Now</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="course-card">
+            <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+              <img src="./assets/images/machine learning.jpg" width="370" height="220" loading="lazy"
+                alt="Machine Learning A-Z" class="img-cover">
+            </figure>
+            <div class="abs-badge">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+              <span class="span">14 Weeks</span>
+            </div>
+            <div class="card-content">
+              <span class="badge">Advanced</span>
+              <h3 class="h3"><a href="#" class="card-title">Machine Learning A-Z MasterClass</a></h3>
+              <div class="wrapper">
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half-outline"></ion-icon>
+                </div>
+                <p class="rating-text">(4.7 /10 Rating)</p>
+              </div>
+              <p>Price in INR: <data class="price" value="4799.00">₹4799.00</data></p>
+              <ul class="card-meta-list">
+                <li class="card-meta-item">
+                  <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+                  <span class="span">100 Lessons</span>
+                </li>
+                <li class="card-meta-item">
+                  <button class="enroll-btn" onclick="alert('Please log in to enroll in courses');">Enroll Now</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="course-card">
+            <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+              <img src="./assets/images/digital marketing.jpg" width="370" height="220" loading="lazy"
+                alt="Digital Marketing Masterclass" class="img-cover">
+            </figure>
+            <div class="abs-badge">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+              <span class="span">6 Weeks</span>
+            </div>
+            <div class="card-content">
+              <span class="badge">Beginner</span>
+              <h3 class="h3"><a href="#" class="card-title">Digital Marketing Masterclass</a></h3>
+              <div class="wrapper">
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half-outline"></ion-icon>
+                </div>
+                <p class="rating-text">(4.4 /9 Rating)</p>
+              </div>
+              <p>Price in INR: <data class="price" value="2499.00">₹2499.00</data></p>
+              <ul class="card-meta-list">
+                <li class="card-meta-item">
+                  <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+                  <span class="span">25 Lessons</span>
+                </li>
+                <li class="card-meta-item">
+                  <button class="enroll-btn" onclick="alert('Please log in to enroll in courses');">Enroll Now</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="course-card">
+            <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+              <img src="./assets/images/react js.png" width="370" height="220" loading="lazy"
+                alt="React - The Complete Guide" class="img-cover">
+            </figure>
+            <div class="abs-badge">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+              <span class="span">10 Weeks</span>
+            </div>
+            <div class="card-content">
+              <span class="badge">Intermediate</span>
+              <h3 class="h3"><a href="#" class="card-title">React - The Complete Guide</a></h3>
+              <div class="wrapper">
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+                <p class="rating-text">(4.2 /8 Rating)</p>
+              </div>
+              <p>Price in INR: <data class="price" value="3499.00">₹3499.00</data></p>
+              <ul class="card-meta-list">
+                <li class="card-meta-item">
+                  <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+                  <span class="span">55 Lessons</span>
+                </li>
+                <li class="card-meta-item">
+                  <button class="enroll-btn" onclick="alert('Please log in to enroll in courses');">Enroll Now</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="course-card">
+            <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+              <img src="./assets/images/c++.webp" width="370" height="220" loading="lazy"
+                alt="C++ Programming Masterclass" class="img-cover">
+            </figure>
+            <div class="abs-badge">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+              <span class="span">15 Weeks</span>
+            </div>
+            <div class="card-content">
+              <span class="badge">Advanced</span>
+              <h3 class="h3"><a href="#" class="card-title">C++ Programming Beginner</a></h3>
+              <div class="wrapper">
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+                <p class="rating-text">(4.6 /10 Rating)</p>
+              </div>
+              <p>Price in INR: <data class="price" value="4599.00">₹4599.00</data></p>
+              <ul class="card-meta-list">
+                <li class="card-meta-item">
+                  <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+                  <span class="span">85 Lessons</span>
+                </li>
+                <li class="card-meta-item">
+                  <button class="enroll-btn" onclick="alert('Please log in to enroll in courses');">Enroll Now</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="course-card">
+            <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+              <img src="./assets/images/cyber.png" width="370" height="220" loading="lazy"
+                alt="Cyber Security Essentials" class="img-cover">
+            </figure>
+            <div class="abs-badge">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+              <span class="span">12 Weeks</span>
+            </div>
+            <div class="card-content">
+              <span class="badge">Beginner</span>
+              <h3 class="h3"><a href="#" class="card-title">Cyber Security Essentials</a></h3>
+              <div class="wrapper">
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+                <p class="rating-text">(4.3 /9 Rating)</p>
+              </div>
+              <p>Price in INR: <data class="price" value="3999.00">₹3999.00</data></p>
+              <ul class="card-meta-list">
+                <li class="card-meta-item">
+                  <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+                  <span class="span">45 Lessons</span>
+                </li>
+                <li class="card-meta-item">
+                  <button class="enroll-btn" onclick="alert('Please log in to enroll in courses');">Enroll Now</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="course-card">
+            <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+              <img src="./assets/images/aws.avif" width="370" height="220" loading="lazy"
+                alt="AWS Cloud Practitioner Essentials" class="img-cover">
+            </figure>
+            <div class="abs-badge">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+              <span class="span">7 Weeks</span>
+            </div>
+            <div class="card-content">
+              <span class="badge">Intermediate</span>
+              <h3 class="h3"><a href="#" class="card-title">AWS Cloud Practitioner Essentials</a></h3>
+              <div class="wrapper">
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half-outline"></ion-icon>
+                </div>
+                <p class="rating-text">(4.6 /10 Rating)</p>
+              </div>
+              <p>Price in INR: <data class="price" value="4299.00">₹4299.00</data></p>
+              <ul class="card-meta-list">
+                <li class="card-meta-item">
+                  <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+                  <span class="span">55 Lessons</span>
+                </li>
+                <li class="card-meta-item">
+                  <button class="enroll-btn" onclick="alert('Please log in to enroll in courses');">Enroll Now</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="course-card">
+            <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+              <img src="./assets/images/c.png" width="370" height="220" loading="lazy"
+                alt="AWS Cloud Practitioner Essentials" class="img-cover">
+            </figure>
+            <div class="abs-badge">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+              <span class="span">10 Weeks</span>
+            </div>
+            <div class="card-content">
+              <span class="badge">Intermediate</span>
+              <h3 class="h3"><a href="#" class="card-title">C Programming Language for Beginner</a></h3>
+              <div class="wrapper">
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half-outline"></ion-icon>
+                </div>
+                <p class="rating-text">(4.6 /10 Rating)</p>
+              </div>
+              <p>Price in INR: <data class="price" value="1999.00">₹1999.00</data></p>
+              <ul class="card-meta-list">
+                <li class="card-meta-item">
+                  <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+                  <span class="span">55 Lessons</span>
+                </li>
+                <li class="card-meta-item">
+                  <button class="enroll-btn" onclick="alert('Please log in to enroll in courses');">Enroll Now</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="course-card">
+            <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+              <img src="./assets/images/adv.webp" width="370" height="220" loading="lazy"
+                alt="AWS Cloud Practitioner Essentials" class="img-cover">
+            </figure>
+            <div class="abs-badge">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+              <span class="span">8 Weeks</span>
+            </div>
+            <div class="card-content">
+              <span class="badge">Intermediate</span>
+              <h3 class="h3"><a href="#" class="card-title">Advance Java for&nbsp;&nbsp;&nbsp; Masterclass</a></h3>
+              <div class="wrapper">
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half-outline"></ion-icon>
+                </div>
+                <p class="rating-text">(4.6 /10 Rating)</p>
+              </div>
+              <p>Price in INR: <data class="price" value="5999.00">₹5999.00</data></p>
+              <ul class="card-meta-list">
+                <li class="card-meta-item">
+                  <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+                  <span class="span">60 Lessons</span>
+                </li>
+                <li class="card-meta-item">
+                  <button class="enroll-btn" onclick="alert('Please log in to enroll in courses');">Enroll Now</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </section>
+  <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy;2024 Online learning paltfrom
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+</body>
+<script defer src="assets/js/script.js"></script>
+
+</html>

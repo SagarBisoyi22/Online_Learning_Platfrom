@@ -1,0 +1,412 @@
+/*-----------------------------------*\
+        dash board
+\*-----------------------------------*/
+/* Resetting some defaults for consistent styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    /* Improves readability */
+}
+
+/* Sticky Header */
+.header {
+    background-color: black;
+    color: white;
+    position: sticky;
+    /* Sticky positioning */
+    top: 0;
+    /* Sticks to the top */
+    z-index: 1000;
+    /* Ensures it's on top of other elements */
+    width: 100%;
+    /* Full width */
+    padding: 15px 0;
+    /* Padding around header */
+}
+
+/* Navbar inside Header */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    /* Spacing inside the navbar */
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+/* Individual Link Styling */
+.nav-item {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.nav-item:hover {
+    color: #FFD700;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+
+/*-----------------------------------*\
+        add course
+\*-----------------------------------*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+.admin-panel {
+    max-width: 400px;
+    margin: 0 auto 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input,
+form select {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.course-card {
+    position: relative;
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 10px auto;
+    max-width: 380px;
+    height: 520px;
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
+}
+
+figure {
+    margin: 0;
+}
+
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.course-card .img-cover {
+    transition: transform 0.3s;
+
+}
+
+.course-card:hover .img-cover {
+    transform: scale(1.1);
+}
+
+.abs-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f0c040;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-family: sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.card-title:hover {
+    color: hsl(170, 75%, 41%);
+}
+
+.badge {
+    background-color: hsla(170, 75%, 41%, 0.15);
+    color: hsl(170, 75%, 41%);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    /* Changed to column layout */
+    align-items: flex-start;
+    /* Aligns items to the start */
+    margin-bottom: 10px;
+}
+
+.card-meta {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    margin-left: 30px;
+}
+
+.card-meta-item {
+    flex-basis: 40%;
+    /* Set width for the lessons section */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* Space between icon and text */
+    padding-right: 0px;
+    /* Add space on the right side of the lessons section */
+}
+
+.rating-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* Space between rating stars and score */
+}
+
+.rating-color {
+    color: yellow;
+    font-size: 20px;
+}
+
+.price {
+    color: darkgrey;
+    font-size: 15px;
+    margin-top: 20px;
+    /* Adds some space above the price */
+}
+
+.price-value {
+    color: #e74c3c;
+    /* Set the color of the price to red */
+    font-size: 1.2rem;
+    /* Make the font size larger */
+    font-weight: bold;
+    /* Make the price bold */
+}
+
+.enroll-btn {
+    flex-basis: 60%;
+    /* Set width for the enroll button */
+    background-color: #7fc1eb;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-left: 10px;
+    /* Optional: Add left padding */
+}
+
+.enroll-btn:hover {
+    background-color: #67a8bd;
+}
+
+
+
+/* Add these styles to your existing Styles.css */
+
+/* Add to your Styles.css */
+
+.courses-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.courses-section h3 {
+    margin-bottom: 2rem;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.course-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.2s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-info h4 {
+    color: #333;
+    font-size: 1.25rem;
+    margin: 0 0 1rem 0;
+}
+
+.course-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.duration {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.price {
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+.description {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.course-actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.action-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.view-btn {
+    background: #3498db;
+    color: white;
+}
+
+.view-btn:hover {
+    background: #2980b9;
+}
+
+.edit-btn {
+    background: #f1c40f;
+    color: #333;
+}
+
+.edit-btn:hover {
+    background: #f39c12;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    color: white;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}
+
+.loading {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+    grid-column: 1 / -1;
+}
+
+.error {
+    text-align: center;
+    padding: 2rem;
+    color: #e74c3c;
+    grid-column: 1 / -1;
+}
+
+.no-courses {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+    grid-column: 1 / -1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .courses-section {
+        padding: 1rem;
+    }
+
+    .course-container {
+        grid-template-columns: 1fr;
+    }
+
+    .course-actions {
+        grid-template-columns: 1fr;
+    }
+}

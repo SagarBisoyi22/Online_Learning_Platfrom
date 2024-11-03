@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Learing Paltform</title>
+    <link rel="shortcut icon" href="../Online_Learning_Platform/OnlineLearning/assets/images/fev.ico" type="image/svg+xml">
+  <link rel="stylesheet" href="Styles.css">
+  <script defer src="Script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+  <h1>Manage Course Cards</h1>
+  <a href="index.html">
+    <button type="button">Go to Index Page</button>
+  </a><br><br><br>
+
+  <section class="admin-panel">
+    <form id="cardForm" enctype="multipart/form-data">
+      <h2>Add / Edit Course</h2>
+
+      <!-- Course Name -->
+      <label for="name">Course Name:</label>
+      <input type="text" id="name" name="name" placeholder="Course Name" required>
+
+      <!-- Course Duration -->
+      <label for="duration">Duration (Weeks):</label>
+      <input type="number" id="weeks" name="weeks" placeholder="Enter Weeks" required>
+
+      <!-- Course Description -->
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" placeholder="Course Description" required></textarea>
+
+      <!-- Course Price -->
+      <label for="price">Price (INR):</label>
+      <input type="number" id="price" name="price" placeholder="Price in INR" required>
+
+      <!-- Video Upload -->
+      <label for="video">Upload Video:</label>
+      <input type="file" id="video" name="video" accept="video/*" required>
+
+      <!-- PDF Upload -->
+      <label for="pdf">Upload PDF:</label>
+      <input type="file" id="pdf" name="pdf" accept="application/pdf" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+</body>
+
+</html>

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Learing Paltform</title>
+  <link rel="shortcut icon" href="../OnlineLearning/assets/images/fev.ico" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!--
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.svg">
+  <link rel="preload" as="image" href="./assets/images/lesson-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/lesson-2.jpg">
+
+</head>
+
+<body id="top">
+
+  <!--
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <!-- <a href="" class="logo"> -->
+      <img src="./assets/images/logo.png" width="162" height="50" alt="online_learing logo">
+      <!-- </a> -->
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="index.html" class="logo">
+            <img src="./assets/images/logo.png" width="162" height="50" alt="online_learing logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="./index.html" class="navbar-link" data-nav-link><b>Home</b></a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./courses.html" class="navbar-link" data-nav-link><b>Courses</b></a>
+          </li>
+          <li class="navbar-item">
+            <a href="./about.html" class="navbar-link" data-nav-link><b>About</b></a>
+          </li>
+          <li class="navbar-item">
+            <a href="./contact.html" class="navbar-link" data-nav-link><b>Contact</b></a>
+          </li>
+
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <!-- Modified Login Button -->
+        <div class="dropdown">
+          <button class="btn navbar-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+            Login
+            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+          </button>
+          <div class="dropdown-menu">
+            <a href="login.html" class="dropdown-item">User Login</a>
+            <a href="../../admin/login.html" class="dropdown-item">Admin Login</a>
+          </div>
+        </div>
+
+        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!--
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" id="home" aria-label="home"
+        style="background-image: url('./assets/images/hero-bg.svg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 section-title">
+              The Best Course to <span class="span">Enroll</span> for Our Bright Feature
+            </h1>
+
+            <p class="hero-text">
+              With online education, the best teachers and the brightest minds are just a screen away
+            </p>
+
+            <a href="#" class="btn has-before">
+              <span class="span">Find courses</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+          <figure class="hero-banner">
+
+            <div class="img-holder one" style="--width: 270; --height: 300;">
+              <img src="./assets/images/lesson-1.jpg" width="270" height="300" alt="hero banner" class="img-cover">
+            </div>
+
+            <div class="img-holder two" style="--width: 240; --height: 370;">
+              <img src="./assets/images/lesson-2.jpg" width="240" height="370" alt="hero banner" class="img-cover">
+            </div>
+
+            <img src="./assets/images/hero-shape-2.png" width="622" height="551" alt="" class="shape hero-shape-2">
+
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!--
+        - #CATEGORY
+      -->
+
+      <section class="section category" aria-label="category">
+        <div class="container">
+
+          <p class="section-subtitle">Categories</p>
+
+          <h2 class="h2 section-title">
+            Online <span class="span">Classes</span> For Remote Learning
+          </h2><br>
+
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="category-card" style="--color: 170, 75%, 41%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-1.svg" width="40" height="40" loading="lazy"
+                    alt="Online Degree Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Machine <br> Learning</a>
+                </h3>
+
+                <p class="card-text">
+                  Algorithms learn from data to make predictions and decisions.
+                </p>
+
+                <span class="card-badge">2 Courses</span>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="--color: 351, 83%, 61%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-2.svg" width="40" height="40" loading="lazy"
+                    alt="Non-Degree Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Artificial<br>Intelligence</a>
+                </h3>
+
+                <p class="card-text">
+                  Machines simulate human intelligence for tasks like problem-solving.
+                </p>
+
+                <span class="card-badge">1 Courses</span>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="--color: 229, 75%, 58%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-3.svg" width="40" height="40" loading="lazy"
+                    alt="Off-Campus Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Database <br> &nbsp;</a>
+                </h3>
+
+                <p class="card-text">
+                  Organized storage and retrieval of structured data efficiently.
+                </p>
+
+                <span class="card-badge">2 Courses</span>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="--color: 42, 94%, 55%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-4.svg" width="40" height="40" loading="lazy"
+                    alt="Hybrid Distance Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Programming <br> Language</a>
+                </h3>
+
+                <p class="card-text">
+                  Instructions to develop software and automate computer tasks.
+                </p>
+
+                <span class="card-badge">5 Courses</span>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+      <!--
+        - #COURSE
+      -->
+
+      <section class="section course" id="courses" aria-label="course">
+        <div class="container">
+
+          <p class="section-subtitle">Popular Courses</p>
+
+          <h2 class="h2 section-title">Pick A Course To Get Started</h2><br>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="./assets/images/course-1.jpg" width="370" height="220" loading="lazy"
+                    alt="Build Responsive Real- World Websites with HTML and CSS" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">8 Weeks</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Beginner</span>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Build Responsive Real- World Websites with HTML and CSS</a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(5.0/7 Rating)</p>
+
+                  </div>
+
+                  <p>Price in INR: <data class="price" value="4067">₹2499.00</data></p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">30 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">25 Students</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="./assets/images/course-2.jpg" width="370" height="220" loading="lazy"
+                    alt="Java Programming Masterclass for Software Developers" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">12 Weeks</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Advanced</span>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Java Programming Masterclass for Software Developers</a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.5 /9 Rating)</p>
+
+                  </div>
+
+                  <p>Price in INR: <data class="price" value="4067">₹3999.00</data></p>
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">80 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">35 Students</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="./assets/images/course-3.jpg" width="370" height="220" loading="lazy"
+                    alt="The Complete Camtasia Course for Content Creators" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">8 Weeks</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Intermediate</span>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">The Complete MySQL Course for Beginner</a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.9 /7 Rating)</p>
+
+                  </div>
+
+                  <p>Price in INR: <data class="price" value="2999.00">₹2999.00</data></p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">50 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">36 Students</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="login.html" class="btn has-before">
+            <span class="span">Login required to enroll in the course</span>
+
+            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+          </a>
+
+        </div>
+      </section>
+
+      <!--
+        - #VIDEO
+      -->
+
+      <section class="video has-bg-image" aria-label="video"
+        style="background-image: url('./assets/images/video-bg.png')">
+        <div class="container">
+
+          <div class="video-card">
+
+            <div class="video-banner img-holder has-after" style="--width: ; --height: ;">
+              <img src="./assets/images/video-banner.jpg" width="970" height="550" loading="lazy" alt="video banner"
+                class="img-cover">
+
+              <button class="play-btn" aria-label="play video">
+                <ion-icon name="play" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+
+            <img src="./assets/images/video-shape-1.png" width="1089" height="605" loading="lazy" alt=""
+              class="shape video-shape-1">
+
+            <img src="./assets/images/video-shape-2.png" width="158" height="174" loading="lazy" alt=""
+              class="shape video-shape-2">
+
+          </div>
+
+        </div>
+      </section>
+
+      <!--
+        - #STATE
+      -->
+
+      <section class="section stats" aria-label="stats">
+        <div class="container">
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="stats-card" style="--color: 170, 75%, 41%">
+                <h3 class="card-title">3.2k</h3>
+
+                <p class="card-text">Student Enrolled</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="stats-card" style="--color: 351, 83%, 61%">
+                <h3 class="card-title">975</h3>
+
+                <p class="card-text">Class Completed</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="stats-card" style="--color: 260, 100%, 67%">
+                <h3 class="card-title">87%</h3>
+
+                <p class="card-text">Satisfaction Rate</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="stats-card" style="--color: 42, 94%, 55%">
+                <h3 class="card-title">30+</h3>
+
+                <p class="card-text">Top Instructors</p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!--
+    - #FOOTER
+  -->
+
+  <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy;2024 Online learning paltfrom
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!--
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

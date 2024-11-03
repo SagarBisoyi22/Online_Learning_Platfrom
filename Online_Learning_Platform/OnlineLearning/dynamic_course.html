@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Learing Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../OnlineLearning/assets/css/style.css">
+    <link rel="shortcut icon" href="../OnlineLearning/assets/images/fev.ico">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <style>
+        .search-section {
+            flex-grow: 1;
+            margin: 0 2rem;
+            max-width: 500px;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            width: 100%;
+        }
+
+        .search-input {
+            flex-grow: 1;
+            padding: 0.5rem 1rem;
+            border: 2px solid #3498db;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #2980b9;
+        }
+
+        .search-button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .search-button:hover {
+            background-color: #2980b9;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        /* Course card styles */
+        .existing-courses {
+            background-color: #f0f8ff;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .existing-courses h3 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #2c3e50;
+        }
+
+        .grid-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 0;
+            list-style: none;
+        }
+
+        .existing-course-card {
+            background: white;
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            padding: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .existing-course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-title {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .course-description {
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        .course-instructor {
+            color: #3498db;
+            font-weight: 500;
+        }
+
+        .logout-btn {
+            width: 100px;
+            height: 50px;
+            font-size: 18px;
+            background-color: hsl(170, 75%, 41%);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .logout-btn:hover {
+            background-color: #c0392b;
+        }
+
+        /* No results message */
+        .no-results {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 1.1rem;
+            grid-column: 1 / -1;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header" data-header>
+        <div class="container">
+            <img src="./assets/images/logo.png" width="162" height="50" alt="online_learning logo">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="text-center mt-4">
+                <button class="btn btn-primary" onclick="goToEnrolledCourses()">Enrolled Courses </button>
+            </div>
+            <div class="header-actions">
+                <div class="search-section">
+                    <div class="search-container">
+                        <input type="text" class="search-input" id="searchInput" placeholder="Search courses...">
+                        <button class="search-button" id="searchButton">
+                            Search
+                        </button>
+                    </div>
+                </div>
+
+                <button class="logout-btn" onclick="logout()">
+                    Logout
+                </button>
+            </div>
+        </div>
+    </header>
+    <section class="existing-courses">
+        <div class="container">
+            <h3><b>Existing or Available Courses</b></h3>
+            <ul id="existingCoursesList" class="grid-list">
+                <!-- Existing courses will be dynamically inserted here -->
+            </ul>
+        </div>
+    </section>
+
+
+    <script>
+        // Logout function
+        function logout() {
+            window.location.href = "index.html";
+        }
+        function goToEnrolledCourses() {
+            window.location.href = "existing_course.html"; // Update this URL as needed
+        }
+
+    </script>
+    <script defer src="assets/js/script.js"></script>
+</body>
+
+</html>
